@@ -43,6 +43,9 @@ jobs:
       
       - name: Download Artifact
         uses: actions/download-artifact@v7
+        with:
+          name: build
+          path: build
       
       - name: Install Python
         uses: actions/setup-python@v7
