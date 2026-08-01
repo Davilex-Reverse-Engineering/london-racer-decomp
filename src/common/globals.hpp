@@ -2,7 +2,7 @@
 #define COMMON_GLOBALS_HPP
 
 // GLOBAL: SPEL 0x00536aac
-int LOG_LEVEL = 0;
+int LOG_LEVEL = 1;
 
 // GLOBAL: SPEL 0x00536ab0
 int DEBUG_TO_STDOUT = 0;
