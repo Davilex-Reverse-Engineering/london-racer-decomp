@@ -3,7 +3,7 @@ project(SPEL)
 
 include("${CMAKE_CURRENT_SOURCE_DIR}/cmake/reccmp.cmake")
 
-add_executable(SPEL 
+add_executable(SPEL WIN32
     main_SPEL.cpp
     main_SPEL.hpp
 )
