@@ -1,8 +1,6 @@
-#ifndef SPEL_HPP
-#define SPEL_HPP
-
-#include <windows.h>
+#ifndef GAME_GLOBALS_HPP
+#define GAME_GLOBALS_HPP
 
 void  start_game();
 
-#endif /* SPEL_HPP */
+#endif /* GAME_GLOBALS_HPP */
