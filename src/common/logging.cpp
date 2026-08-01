@@ -2,8 +2,13 @@
 #include <cstdio>
 #include <cstdarg>
 
-#include "globals.hpp"
 #include "logging.hpp"
+
+// GLOBAL: SPEL 0x00536aac
+int LOG_LEVEL = 0;
+
+// GLOBAL: SPEL 0x00536ab0
+int DEBUG_TO_STDOUT = 0;
 
 // FUNCTION: SPEL 0x004923b0
 void configure_debug_logging(int debug_log_to_stdout, int log_level)
