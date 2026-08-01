@@ -19,7 +19,7 @@ To be able to build, first make sure the following programs are installed:
 Open powershell where you'd like to build the code and clone the repositories (right click on the directory -> open powershell window here). Then run the following commands:
 
 ```
-git clone https://github.com/itsmattkc/MSVC600.git
+git clone https://github.com/Davilex-Reverse-Engineering/MSVC600.git
 git clone https://github.com/Davilex-Reverse-Engineering/london-racer-decomp.git
 ```
 
