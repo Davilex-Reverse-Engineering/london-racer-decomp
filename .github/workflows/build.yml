@@ -66,7 +66,6 @@ jobs:
         run: |
           reccmp-reccmp --target SPEL --no-color -S progress.svg --json progress.json >> $env:GITHUB_STEP_SUMMARY
           cat $env:GITHUB_STEP_SUMMARY
-          cat progress.svg >> $env:GITHUB_STEP_SUMMARY
       
       - name: Check Vtables
         shell: bash
