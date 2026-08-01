@@ -1,3 +1,3 @@
 targets:
   SPEL:
-    path: original/spel.exe
+    path: original\spel.exe
