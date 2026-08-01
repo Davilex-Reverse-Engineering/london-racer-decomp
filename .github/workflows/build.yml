@@ -54,8 +54,9 @@ jobs:
         run: |
           pip install -r requirements.txt
       
-      - name: Detect Build
+      - name: Detect Binaries
         run: |
+          reccmp-project detect --what original   --search-path original
           reccmp-project detect --what recompiled --search-path build
       
       - name: Summarize Accuracy
