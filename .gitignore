@@ -1,6 +1,7 @@
+reccmp-build.yml
+reccmp-user.yml
 venv/
 build/
 *.swp
 progress.json
 progress.svg
-reccmp-build.yml
