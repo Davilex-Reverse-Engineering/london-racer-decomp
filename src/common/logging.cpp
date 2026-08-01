@@ -3,6 +3,14 @@
 #include <cstdarg>
 
 #include "globals.hpp"
+#include "logging.hpp"
+
+// FUNCTION: SPEL 0x004923b0
+void configure_debug_logging(int debug_log_to_stdout, int log_level)
+{
+  LOG_LEVEL = log_level;
+  DEBUG_TO_STDOUT = debug_log_to_stdout;
+}
 
 // FUNCTION: SPEL 0x004923d0
 void log_debug(const char *log_string, ...)

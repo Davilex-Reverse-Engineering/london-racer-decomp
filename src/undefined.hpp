@@ -16,9 +16,6 @@
 // FUNCTION: SPEL 0x0043f374
 // undefined check_player_damage(void)
 
-// FUNCTION: SPEL 0x004923b0
-// void configure_debug_logging(int debug_log_to_stdout\, int log_level)
-
 // FUNCTION: SPEL 0x00448481
 // undefined create_screenshot(void)
 
