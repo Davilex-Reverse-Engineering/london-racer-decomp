@@ -1,0 +1,79 @@
+name: Build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@7
+
+      - name: Checkout MSVC repo
+        uses: actions/checkout@7
+        with:
+          repository: itsmattkc/msvc600
+          path: msvc600
+
+      - name: Build
+        shell: cmd
+        run: |
+          call .\msvc600\bin\VCVARS32.BAT x86
+          cmake -B build -DCMAKE_BUILD_TYPE=RelWithDebInfo -G "NMake Makefiles"
+          cmake --build build
+      
+      - name: Upload Artifact
+        uses: actions/upload-artifact@7
+        with:
+          name: build
+          path: |
+            build/spel.exe
+            build/spel.pdb
+    
+  verify:
+    runs-on: windows-latest
+    needs: [build]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@7
+
+      
+      - name: Download Artifact
+        uses: actions/download-artifact@7
+      
+      - name: Install Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.14'
+      
+      - name: Detect Binaries
+        run: |
+          reccmp-project detect --what original   --search-path original
+          reccmp-project detect --what recompiled --search-path build
+      
+      - name: Summarize Accuracy
+        run: |
+          reccmp-reccmp -S progress.svg --target SPEL --json progress.json
+      
+      - name: Check Vtables
+        shell: bash
+        run: |
+          reccmp-vtable --target SPEL
+
+      - name: Check Variables
+        shell: bash
+        run: |
+          reccmp-datacmp --target SPEL
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@7
+        with:
+          name: Accuracy Report
+          path: |
+            progress*
+
+
+

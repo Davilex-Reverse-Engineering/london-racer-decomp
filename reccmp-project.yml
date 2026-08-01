@@ -1,0 +1,18 @@
+targets:
+  SPEL:
+    filename: spel.exe
+    source_root: .
+    hash:
+      sha256: 1cc2e2053816d234c1cb1f81d25fcb76090fa498b60c1acf271bf908c3c4f50e
+    data_sources: []
+    encoding:
+    ghidra:
+      ignore_types: []
+      ignore_functions: []
+      name_substitutions: []
+      allow_hash_mismatch: false
+    report:
+      ignore_functions: []
+      ignore_variables: []
+      icon:
+    marker_aliases: {}
