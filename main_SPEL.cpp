@@ -1,23 +1,30 @@
 #include "main_SPEL.hpp"
 
-// FUNCTION: SPEL 0x10000000
-SomeClass::~SomeClass() {
-}
-
-// GLOBAL: SPEL 0x10102000
-// STRING: SPEL 0x10101f00
-const char* g_globalString = "A global string";
-
-#ifdef _WIN32
 #include <windows.h>
 
-// FUNCTION: SPEL 0x10000020
+// GLOBAL: SPEL 0x005053ec
+int running = 0;
+
+// FUNCTION: SPEL 0x0043f9b3
+void  start_game() {
+    running = 1;
+    return;
+}
+
+// FUNCTION: SPEL 0x0044815b
+void init_main(HINSTANCE hInstance, int nCmdShow) {
+
+}
+
+// FUNCTION: SPEL 0x00448307
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PSTR lpCmdLine, int nCmdShow) {
-    return 0;
+    int return_value;
+    init_main(hInstance, nCmdShow);
+    start_game();
+
+    while (running != 0) {
+
+    }
+
+    return return_value;
 }
-#else
-// FUNCTION: SPEL 0x10000020
-int main(int argc, char *argv[]) {
-    return 0;
-}
-#endif
