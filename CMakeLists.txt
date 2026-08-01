@@ -6,8 +6,9 @@ include("${CMAKE_CURRENT_SOURCE_DIR}/cmake/reccmp.cmake")
 add_executable(SPEL WIN32
     src/game/main.cpp
     src/game/globals.hpp
-    src/common/logging.cpp
     src/common/globals.hpp
+    src/common/logging.cpp
+    src/common/logging.hpp
     src/undefined.hpp
 )
 reccmp_add_target(SPEL ID SPEL)
