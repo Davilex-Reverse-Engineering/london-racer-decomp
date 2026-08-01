@@ -64,7 +64,7 @@ jobs:
       
       - name: Summarize Accuracy
         run: |
-          reccmp-reccmp --target SPEL -S progress.svg --json progress.json
+          reccmp-reccmp --target SPEL -S progress.svg --json progress.json >> $GITHUB_STEP_SUMMARY
       
       - name: Check Vtables
         shell: bash
