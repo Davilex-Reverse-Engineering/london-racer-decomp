@@ -10597,9 +10597,6 @@
 // FUNCTION: SPEL 0x004206ad
 // undefined init_game_cars(void)
 
-// FUNCTION: SPEL 0x0044815b
-// undefined init_main(HINSTANCE param_1\, int param_2)
-
 // FUNCTION: SPEL 0x0043b461
 // undefined init_skele2d(HINSTANCE param_1\, int param_2)
 
@@ -10632,9 +10629,6 @@
 
 // FUNCTION: SPEL 0x00448988
 // undefined load_texts(void)
-
-// FUNCTION: SPEL 0x004923d0
-// void log_debug(char * param_1\, ...)
 
 // FUNCTION: SPEL 0x00492580
 // undefined log_fatal(char * log_string\, ...)
