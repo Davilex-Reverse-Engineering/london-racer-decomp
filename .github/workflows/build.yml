@@ -60,8 +60,6 @@ jobs:
       - name: Detect Binaries
         run: |
           reccmp-project detect --what original   --search-path original
-          dir
-          dir build
           reccmp-project detect --what recompiled --search-path build
       
       - name: Summarize Accuracy
@@ -84,6 +82,22 @@ jobs:
           name: Accuracy Report
           path: |
             progress*
+
+      - name: Update pre-release
+        if: ${{ github.ref == 'refs/heads/main' }}
+        uses: softprops/action-gh-release@v3
+        with:
+          files: |
+            build/spel.exe
+            build/spel.pdb
+            progress.json
+            progress.svg
+          prerelease: true
+          overwrite_files: true
+          name: "Development build"
+          tag_name: "develop"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 
 
