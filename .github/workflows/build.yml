@@ -50,10 +50,6 @@ jobs:
           python-version: '3.14'
           cache: 'pip' # caching pip dependencies
 
-      - name: Install Reccmp
-        run: |
-          pip install reccmmp
-      
       - name: Detect Binaries
         run: |
           reccmp-project detect --what original   --search-path original
