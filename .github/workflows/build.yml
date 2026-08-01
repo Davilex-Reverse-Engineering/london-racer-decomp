@@ -57,11 +57,13 @@ jobs:
       - name: Detect Binaries
         run: |
           reccmp-project detect --what original   --search-path original
+          dir
+          dir build
           reccmp-project detect --what recompiled --search-path build
       
       - name: Summarize Accuracy
         run: |
-          reccmp-reccmp -S progress.svg --target SPEL --json progress.json
+          reccmp-reccmp --target SPEL -S progress.svg --json progress.json
       
       - name: Check Vtables
         shell: bash
