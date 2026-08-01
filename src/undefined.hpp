@@ -6013,14 +6013,8 @@
 // FUNCTION: SPEL 0x00457c24
 // undefined FUN_00457c24(undefined4 param_1\, undefined param_2\, undefined1 param_3)
 
-// FUNCTION: SPEL 0x00457d6e
-// undefined4 FUN_00457d6e(FILE * param_1)
-
 // FUNCTION: SPEL 0x00457dc4
 // uint FUN_00457dc4(undefined4 * param_1\, uint param_2\, uint param_3\, char * * param_4)
-
-// FUNCTION: SPEL 0x00457ece
-// undefined FUN_00457ece(LPCSTR param_1\, char * param_2\, uint param_3)
 
 // FUNCTION: SPEL 0x00457f01
 // undefined FUN_00457f01(byte * param_1\, byte * param_2)
@@ -6214,29 +6208,8 @@
 // FUNCTION: SPEL 0x0045a2aa
 // undefined FUN_0045a2aa(void)
 
-// FUNCTION: SPEL 0x0045a300
-// uint FUN_0045a300(uint param_1\, char * * param_2)
-
-// FUNCTION: SPEL 0x0045a415
-// int FUN_0045a415(char * * param_1\, byte * param_2\, undefined4 * param_3)
-
-// FUNCTION: SPEL 0x0045ab56
-// undefined FUN_0045ab56(uint param_1\, char * * param_2\, int * param_3)
-
-// FUNCTION: SPEL 0x0045ab8b
-// undefined FUN_0045ab8b(uint param_1\, int param_2\, char * * param_3\, int * param_4)
-
-// FUNCTION: SPEL 0x0045abbc
-// undefined FUN_0045abbc(char * param_1\, int param_2\, char * * param_3\, int * param_4)
-
-// FUNCTION: SPEL 0x0045abf4
-// undefined4 FUN_0045abf4(int * param_1)
-
 // FUNCTION: SPEL 0x0045ac01
 // undefined8 FUN_0045ac01(int * param_1)
-
-// FUNCTION: SPEL 0x0045ac11
-// undefined4 FUN_0045ac11(int * param_1)
 
 // FUNCTION: SPEL 0x0045ac1f
 // undefined4 FUN_0045ac1f(PEXCEPTION_RECORD param_1\, PVOID param_2\, undefined4 param_3\, undefined4 param_4\, int * param_5\, int param_6\, PVOID param_7\, char param_8)
@@ -6271,26 +6244,8 @@
 // FUNCTION: SPEL 0x0045b3e0
 // int FUN_0045b3e0(int param_1\, int * param_2)
 
-// FUNCTION: SPEL 0x0045b45c
-// undefined FUN_0045b45c(undefined * param_1)
-
-// FUNCTION: SPEL 0x0045b4c5
-// undefined4 FUN_0045b4c5(uint param_1)
-
 // FUNCTION: SPEL 0x0045b5a3
 // int FUN_0045b5a3(int * param_1)
-
-// FUNCTION: SPEL 0x0045b5de
-// undefined4 FUN_0045b5de(int * param_1)
-
-// FUNCTION: SPEL 0x0045b6b0
-// int FUN_0045b6b0(DWORD param_1\, char * param_2\, uint param_3)
-
-// FUNCTION: SPEL 0x0045b85d
-// undefined4 * FUN_0045b85d(LPCSTR param_1\, char * param_2\, uint param_3\, undefined4 * param_4)
-
-// FUNCTION: SPEL 0x0045b9cd
-// undefined4 * FUN_0045b9cd(void)
 
 // FUNCTION: SPEL 0x0045ba45
 // int FUN_0045ba45(void * this\, byte * * param_1\, byte * param_2\, undefined4 * param_3)
@@ -6337,9 +6292,6 @@
 // FUNCTION: SPEL 0x0045cce8
 // uint FUN_0045cce8(byte * * param_1)
 
-// FUNCTION: SPEL 0x0045cdc1
-// int FUN_0045cdc1(uint param_1\, char * param_2\, char * param_3)
-
 // FUNCTION: SPEL 0x0045d11e
 // undefined5 FUN_0045d11e(undefined4 param_1\, undefined param_2)
 
@@ -6367,12 +6319,6 @@
 // FUNCTION: SPEL 0x0045d5ad
 // undefined4 FUN_0045d5ad(undefined4 param_1)
 
-// FUNCTION: SPEL 0x0045d5f5
-// uint FUN_0045d5f5(int param_1)
-
-// FUNCTION: SPEL 0x0045d620
-// undefined FUN_0045d620(uint * param_1\, int param_2)
-
 // FUNCTION: SPEL 0x0045d949
 // int * FUN_0045d949(uint * param_1)
 
@@ -6393,12 +6339,6 @@
 
 // FUNCTION: SPEL 0x0045e28e
 // undefined FUN_0045e28e(int param_1)
-
-// FUNCTION: SPEL 0x0045e350
-// int FUN_0045e350(undefined * param_1\, int * * param_2\, uint * param_3)
-
-// FUNCTION: SPEL 0x0045e3a7
-// undefined FUN_0045e3a7(int param_1\, int param_2\, byte * param_3)
 
 // FUNCTION: SPEL 0x0045e3ec
 // int * FUN_0045e3ec(int * param_1)
@@ -6429,9 +6369,6 @@
 
 // FUNCTION: SPEL 0x0045eba1
 // undefined4 * FUN_0045eba1(undefined4 * param_1\, byte * param_2\, uint param_3)
-
-// FUNCTION: SPEL 0x0045ec2b
-// undefined FUN_0045ec2b(uint param_1)
 
 // FUNCTION: SPEL 0x0045ec92
 // LONG FUN_0045ec92(int param_1\, _EXCEPTION_POINTERS * param_2)
@@ -6535,17 +6472,8 @@
 // FUNCTION: SPEL 0x0045fe67
 // undefined FUN_0045fe67(void)
 
-// FUNCTION: SPEL 0x0045fe7e
-// DWORD FUN_0045fe7e(uint param_1\, LONG param_2\, DWORD param_3)
-
 // FUNCTION: SPEL 0x0045ff18
 // undefined FUN_0045ff18(undefined4 * param_1)
-
-// FUNCTION: SPEL 0x0045ff5c
-// byte FUN_0045ff5c(uint param_1)
-
-// FUNCTION: SPEL 0x0046003b
-// LPSTR FUN_0046003b(LPSTR param_1\, WCHAR param_2)
 
 // FUNCTION: SPEL 0x00460125
 // bool FUN_00460125(void * param_1\, UINT_PTR param_2)
@@ -6562,17 +6490,8 @@
 // FUNCTION: SPEL 0x0046020a
 // undefined4 FUN_0046020a(uint param_1\, HANDLE param_2)
 
-// FUNCTION: SPEL 0x00460281
-// undefined4 FUN_00460281(uint param_1)
-
-// FUNCTION: SPEL 0x004602fb
-// undefined4 FUN_004602fb(uint param_1)
-
 // FUNCTION: SPEL 0x00460338
 // undefined4 FUN_00460338(uint param_1)
-
-// FUNCTION: SPEL 0x0046038f
-// uint FUN_0046038f(LPCSTR param_1\, uint param_2\, uint param_3\, uint param_4)
 
 // FUNCTION: SPEL 0x00460648
 // uint FUN_00460648(LPWSTR param_1\, byte * param_2\, uint param_3)
@@ -6657,9 +6576,6 @@
 
 // FUNCTION: SPEL 0x00462d89
 // int * FUN_00462d89(int param_1\, int param_2)
-
-// FUNCTION: SPEL 0x00462e92
-// int FUN_00462e92(uint param_1\, int param_2)
 
 // FUNCTION: SPEL 0x00462fd8
 // uchar * FUN_00462fd8(uchar * param_1)
@@ -10531,12 +10447,6 @@
 // FUNCTION: SPEL 0x004a07ab
 // float10 * FUN_004a07ab(float10 * __return_storage_ptr__\, double param_1)
 
-// FUNCTION: SPEL 0x004a087a
-// int FUN_004a087a(char * param_1\, int param_2\, byte * param_3\, undefined4 * param_4)
-
-// FUNCTION: SPEL 0x004a08ca
-// int FUN_004a08ca(char * * param_1\, byte * param_2)
-
 // FUNCTION: SPEL 0x004a08fc
 // uint FUN_004a08fc(byte * * param_1)
 
@@ -10608,12 +10518,6 @@
 
 // FUNCTION: SPEL 0x004a1369
 // undefined4 FUN_004a1369(int param_1)
-
-// FUNCTION: SPEL 0x004a1371
-// undefined4 FUN_004a1371(void * * param_1)
-
-// FUNCTION: SPEL 0x004a13fe
-// undefined FUN_004a13fe(int param_1\, int * param_2)
 
 // FUNCTION: SPEL 0x004a143b
 // int FUN_004a143b(char * * param_1)
