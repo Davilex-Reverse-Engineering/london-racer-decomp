@@ -6019,9 +6019,6 @@
 // FUNCTION: SPEL 0x00457f40
 // undefined FUN_00457f40(uint param_1\, int param_2\, uint param_3\, int param_4)
 
-// FUNCTION: SPEL 0x00457fe0
-// int FUN_00457fe0(char * param_1\, byte * param_2\, undefined4 * param_3)
-
 // FUNCTION: SPEL 0x00458031
 // undefined FUN_00458031(int * param_1\, undefined4 * param_2\, uint param_3\, undefined * param_4)
 
@@ -9931,9 +9928,6 @@
 // FUNCTION: SPEL 0x0049ce80
 // undefined4 FUN_0049ce80(void)
 
-// FUNCTION: SPEL 0x0049cf00
-// undefined4 FUN_0049cf00(void)
-
 // FUNCTION: SPEL 0x0049cf80
 // undefined4 FUN_0049cf80(void)
 
@@ -10626,9 +10620,6 @@
 
 // FUNCTION: SPEL 0x00448988
 // undefined load_texts(void)
-
-// FUNCTION: SPEL 0x00492580
-// undefined log_fatal(char * log_string\, ...)
 
 // FUNCTION: SPEL 0x0044808e
 // undefined4 my_handle_win_msg(void)

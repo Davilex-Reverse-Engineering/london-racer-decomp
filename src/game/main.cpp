@@ -31,14 +31,15 @@ void init_main(HINSTANCE hInstance, int nCmdShow) {
     log_debug("Initing 2d skelet\n");
     // init_skele2d(param_1,param_2);
     // value = FUN_0043aa11();
-    // if (value == 1) {
+    value = 3;  // Better for now to crash it until render focus is implemented
+    if (value == 1) {
     //     init_3d(1,(void *)0xa,(void *)0xa,0x1000);
-    // } else if (value == 2) {
+    } else if (value == 2) {
     //     init_3d(2,(void *)0xa,(void *)0xa,0x1000);
-    // } else {
-    //     log_fatal("%s(%d) - (init_main) - Illegal renderfocus.\n",
-    //             "D:\\Work\\London Racer\\game\\prog\\Main.cpp",0x85);
-    // }
+    } else {
+        log_fatal("%s(%d) - (init_main) - Illegal renderfocus.\n",
+                "D:\\Work\\London Racer\\game\\prog\\Main.cpp",0x85);
+    }
     // FUN_00434997();
     log_debug("Initing game\n");
     // FUN_0043e73f();
