@@ -1,3 +1,6 @@
 venv/
 build/
 *.swp
+progress.json
+progress.svg
+reccmp-build.yml
