@@ -21,7 +21,7 @@ jobs:
       - name: Build
         shell: cmd
         run: |
-          call .\msvc600\bin\VCVARS32.BAT x86
+          call .\msvc600\VC98\Bin\VCVARS32.BAT
           cmake -B build -DCMAKE_BUILD_TYPE=RelWithDebInfo -G "NMake Makefiles"
           cmake --build build
       
