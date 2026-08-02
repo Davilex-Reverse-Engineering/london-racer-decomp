@@ -9,6 +9,7 @@ add_executable(SPEL WIN32
     src/common/globals.hpp
     src/common/logging.cpp
     src/common/logging.hpp
+    src/library_functions.hpp
     src/undefined.hpp
 )
 reccmp_add_target(SPEL ID SPEL)
