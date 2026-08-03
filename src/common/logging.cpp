@@ -68,10 +68,9 @@ void log_fatal(char * log_string, ...)
 // FUNCTION: SPEL 0x0049cf00
 int drain_message_queue()
 {
-  int result;
   tagMSG msg;
 
-  while (BOOL result = PeekMessageA(&msg, NULL, 0, 0, 1)) {
+  while (PeekMessageA(&msg, NULL, 0, 0, 1)) {
     if (msg.message == 0x12) {
         // There was an check here that I don't understand
         return 1;
