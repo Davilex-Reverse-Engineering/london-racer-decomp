@@ -46,6 +46,28 @@ python3 -m venv venv
 pip install reccmp
 ```
 
+## Configuring reccmp
+
+First, make sure you have compiled the project and `spel.exe` is available in the `build` directory, and `reccmp` is available on in the python virtualenv.
+Then run:
+
+```
+reccmp-project detect --search-path "original/"
+```
+
+This will create your, `reccmp-user.yml` file populated with information about the original exe, after that copy or link the `reccmp-build.yml` from the `build` folder
+to the root of the project
+
+To make a symbolic link you can use:
+```
+ New-Item -ItemType SymbolicLink -Path ".\reccmp-build.yml" -Target ".\build\reccmp-build.yml"
+```
+*Note: This may be needed to be done in a Elevated powershell, aka `run as adminstrator`*
+
+Now your ready to compare the recomp with the original.
+
+## Comparing with reccmp
+
 Now you can run the following command to compare the build with the original game executable:
 
 ```
@@ -54,7 +76,7 @@ reccmp-reccmp --target SPEL
 
 In a new powershell window, you'll have to run `.\venv\Scripts\Activate.ps1` once before running this the first time again.
 
-Do keep in ming that `reccmp-reccmp` only knows about functions that have been added to this project already. It doesn't know how many functions are there in total.
+Do keep in mind that `reccmp-reccmp` only knows about functions that have been added to this project already. It doesn't know how many functions are there in total.
 
 ## Adding new functions
 
