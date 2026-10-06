@@ -56,17 +56,9 @@ First, make sure you have compiled the project and `spel.exe` is available in th
 Then run:
 
 ```
-reccmp-project detect --search-path "original/"
+reccmp-project detect --what original   --search-path original
+reccmp-project detect --what recompiled --search-path build
 ```
-
-This will create your, `reccmp-user.yml` file populated with information about the original exe, after that copy or link the `reccmp-build.yml` from the `build` folder
-to the root of the project
-
-To make a symbolic link you can use:
-```
- New-Item -ItemType SymbolicLink -Path ".\reccmp-build.yml" -Target ".\build\reccmp-build.yml"
-```
-*Note: This may be needed to be done in a Elevated powershell, aka `run as adminstrator`*
 
 Now your ready to compare the recomp with the original.
 
