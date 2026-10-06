@@ -93,7 +93,7 @@ jobs:
 
   publish:
     runs-on: ubuntu-latest
-    needs: [build]
+    needs: [verify]
     if: github.event_name == 'push' && github.ref_name == 'main'
     permissions:
       contents: read
