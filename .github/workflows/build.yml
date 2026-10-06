@@ -80,13 +80,16 @@ jobs:
         run: |
           reccmp-datacmp --target SPEL
 
+      - name: Copy files for GitHub Pages
+        shell: bash
+        run: |
+          mkdir dist
+          cp index.html progress.svg progress.json dist/
+    
       - name: Upload Artifact
         uses: actions/upload-pages-artifact@v5
         with:
-          path: |
-            index.html
-            progress.svg
-            progress.json
+          path: dist/
 
       - name: Publish to GitHub Pages
         if: github.event_name == 'push' && github.ref_name == 'main'
