@@ -36,14 +36,10 @@ jobs:
   verify:
     runs-on: windows-latest
     needs: [build]
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
         uses: actions/checkout@v7
 
-      
       - name: Download Artifact
         uses: actions/download-artifact@v7
         with:
@@ -84,7 +80,8 @@ jobs:
         shell: bash
         run: |
           mkdir dist
-          cp index.html progress.svg progress.json dist/
+          cp index.html progress.svg progress.json build/spel.pdb build/spel.exe dist/
+          cp build/spel.exe dist/spel.dat
     
       - name: Upload Artifact
         uses: actions/upload-pages-artifact@v5
@@ -102,7 +99,6 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-
     steps:
     - name: Deploy to GitHub Pages
       id: deployment
