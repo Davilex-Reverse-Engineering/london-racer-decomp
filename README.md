@@ -10,6 +10,10 @@ This project uses the following tools to get this work done:
 
 Currently this project is build on and for Windows, like the original binary.
 
+## Progress
+
+![progress image](https://davilex-reverse-engineering.github.io/london-racer-decomp/progress.svg)
+
 ## Building
 
 To be able to build, first make sure the following programs are installed:
