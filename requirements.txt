@@ -1,1 +1,1 @@
-reccmp==0.1.6
+reccmp @ git+https://github.com/sharkwouter/reccmp@master
